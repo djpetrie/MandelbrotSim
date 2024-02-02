@@ -8,7 +8,7 @@ import sys
 from mandelbrot import show, interactive_mandelbrot
 
 
-samples = []    # TODO: change the sample POIs to a text file to allow for saving/loading of POIs
+samples = []    # TODO: change the sample POIs to a text file to allow for saving/loading
 
 
 def main():
