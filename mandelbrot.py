@@ -12,7 +12,6 @@ from functionHelper import mandelbrot_c
 from functionHelper import free
 import drawFromArray
 import math
-import time
 from matplotlib.backend_bases import MouseButton
 
 # Global constants
@@ -46,13 +45,10 @@ def fast_mandelbrot(x_coord, y_coord, field_size, resolution, num_iterations):
     :param num_iterations: Maximum number of iterations for the Mandelbrot bailout algorithm
     :return: A 2D numpy array with entries corresponding to number of iterations before bailout for a sample point.
     """
-    t1 = time.time()
     # Invert y to correct data orientation for display
     data1 = mandelbrot_c(x_coord, -y_coord, field_size, resolution, num_iterations)  # ctypes pointer to int
     np_array = np.ctypeslib.as_array(data1, shape=(resolution, resolution)).copy()   # copy as array in python mem
     free(data1)                                                                      # free dynamic memory
-    t2 = time.time()
-    # print(t2 - t1, "N:", num_iterations, "Pos: (", round(x_coord, 5), ",", round(y_coord, 5), ")")
     np_array[0][0] = 1  # fixes a bug in imshow where an empty array input produces erratic behavior
     return np_array
 
