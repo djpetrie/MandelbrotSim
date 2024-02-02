@@ -33,7 +33,7 @@ def main():
             interactive_mandelbrot()
         elif cmd == 'tour':
             if len(samples) > 0:
-                display(samples[random.randint(0, len(samples))])
+                display(samples[random.randint(0, len(samples) - 1)])
             else:
                 print("The loaded sample point list is empty")
 
