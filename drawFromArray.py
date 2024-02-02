@@ -1,5 +1,6 @@
 """
 Contains methods for configuring and plotting images from 2D arrays for use with the mandelbrot program
+@David Petrie
 """
 import matplotlib.pyplot as plt
 
