@@ -5,7 +5,7 @@ Tools for viewing and exploring fractal images of the Mandelbrot set.
 ## Description
 
 A Python 3.10.10 program designed to allow the user to easily generate fractal images of the Mandelbrot set. It provides a basic terminal interface for inputting commands, and provides some sample views that generate images based on recorded parameters.
-The user can launch "interactive mode" from the terminal, allowing the to traverse the Mandelbrot set interactively with mouse and keyboard input.
+The user can launch "interactive mode" from the terminal, allowing them to traverse the Mandelbrot set interactively with mouse and keyboard input.
 
 ### Controls
 Mouse
