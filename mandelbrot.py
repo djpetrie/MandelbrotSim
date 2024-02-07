@@ -85,6 +85,10 @@ def mouse_event(event, image):
     :param image: The AxisImage for the plot
     :return: None
     """
+
+    if event.xdata is None or event.ydata is None:
+        return None
+
     global g_size, g_x, g_y, g_iteration_mult
     dist_per_px = g_size / g_resolution
     p_x = event.xdata                                    # x pos of clicked pixel measure from bottom left
