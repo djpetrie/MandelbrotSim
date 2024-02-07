@@ -163,7 +163,17 @@ def interactive_mandelbrot():
     """
     # mpl.rcParams['keymap.back'].remove('up')
     # mpl.rcParams['keymap.forward'].remove('down')
-    data = fast_mandelbrot(g_x, g_y, DEFAULT_SIZE, g_resolution, g_iterations)
+
+    # Reset the global variables if a new instance of interactive_mandelbrot is called
+    global g_x, g_y, g_size, g_resolution, g_iterations, g_iteration_mult
+    g_x = DEFAULT_X
+    g_y = DEFAULT_Y
+    g_size = DEFAULT_SIZE
+    g_resolution = DEFAULT_RESOLUTION
+    g_iterations = DEFAULT_ITERATIONS
+    g_iteration_mult = 1.0
+
+    data = fast_mandelbrot(g_x, g_y, g_size, g_resolution, g_iterations)
     image = drawFromArray.image_display(data, plot=False)
     fig = image.figure
     fig.canvas.mpl_connect('button_press_event', lambda event: mouse_event(event, image))
