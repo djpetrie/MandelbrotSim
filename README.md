@@ -42,3 +42,7 @@ If the library fails to load, it may be necessary to recompile the shared object
 ## Authors
 
 David Petrie (petrie.david.james@gmail.com)
+
+## Acknowledgments
+
+* The algorithm in the C library is based off of Mariani's algorithm, and modified for better single treaded performance.
