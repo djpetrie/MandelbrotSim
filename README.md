@@ -6,7 +6,7 @@ Tools for viewing and exploring fractal images of the Mandelbrot set.
 
 1                                              |  2                                              | 3
 :---------------------------------------------:|:-----------------------------------------------:|:---------------------------------------------:
-![Alt text](/images/Mandelbrot4.png?raw=true)  |  ![Alt text](/images/Mandelbrot5.png?raw=true)  |  ![Alt text](/images/Mandelbrot6.png?raw=true)
+![Alt text](/images/Mandelbrot4.png?raw=true)  |  ![Alt text](/images/Mandelbrot3.png?raw=true)  |  ![Alt text](/images/Mandelbrot6.png?raw=true)
 
 ## Description
 
