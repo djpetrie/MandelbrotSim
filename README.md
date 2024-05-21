@@ -2,6 +2,12 @@
 
 Tools for viewing and exploring fractal images of the Mandelbrot set. 
 
+<img src="/images/Mandelbrot5.png?raw=true" width=75% height=75%>
+
+1                                              |  2                                              | 3
+:---------------------------------------------:|:-----------------------------------------------:|:---------------------------------------------:
+![Alt text](/images/Mandelbrot4.png?raw=true)  |  ![Alt text](/images/Mandelbrot5.png?raw=true)  |  ![Alt text](/images/Mandelbrot6.png?raw=true)
+
 ## Description
 
 A Python 3.10.10 program designed to allow the user to easily generate fractal images of the Mandelbrot set. It provides a basic terminal interface for inputting commands, and provides some sample views that generate images based on recorded parameters.
